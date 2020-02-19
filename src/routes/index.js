@@ -2,7 +2,7 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import LoginView from '../views/LoginView/LoginView';
-import HomeView from '../views/HomeView/HomeView';
+// import HomeView from '../views/HomeView/HomeView';
 
 const StackNavigator = createStackNavigator(
   {
