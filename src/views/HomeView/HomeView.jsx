@@ -5,20 +5,23 @@ import { connect } from 'react-redux';
 import RenderHomeScreen from '../../components/RenderHomeScreen/renderHomeScreen';
 
 const styles = StyleSheet.create({
-    screens: {
-      flex: 1
-    }
-  });
-
-  class HomeView extends React.Component {
-      render() {
-        return (
-            <View style={styles.screens}>
-              <RenderHomeScreen />
-            </View>
-          );
-      }
+  screens: {
+    flex: 1
   }
+});
 
-  export default connect()(HomeView);
-  
+class HomeView extends React.Component {
+  static navigationOptions = {
+    headerShown: false
+  };
+
+  render() {
+    return (
+      <View style={styles.screens}>
+        <RenderHomeScreen />
+      </View>
+    );
+  }
+}
+
+export default connect()(HomeView);
