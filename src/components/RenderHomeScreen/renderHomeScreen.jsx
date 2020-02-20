@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
-// import { Entypo } from '@expo/vector-icons';
 import { takePhoto } from '../../services/imageService';
 import styles from './styles';
 
