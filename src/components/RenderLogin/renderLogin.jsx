@@ -1,5 +1,11 @@
 import React from 'react';
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TextInput,
+  TouchableOpacity
+} from 'react-native';
 
 import styles from './styles';
 import logoImage from '../../../assets/K3imaginelogo.png';
@@ -8,15 +14,25 @@ import bottomImage from '../../../assets/Capture.png';
 const RenderLogin = () => {
   return (
     <View style={styles.container}>
-      <Image style={styles.logoImage} source={logoImage} resizeMode="contain" />
+      <Image
+        style={styles.logoImage}
+        source={logoImage}
+        resizeMode="contain"
+      />
       <Text style={styles.loginHeader}>
         Welcome, please log in to your account
       </Text>
       <View style={styles.inputView}>
-        <TextInput style={styles.inputText} placeholder="Username *" />
+        <TextInput
+          style={styles.inputText}
+          placeholder="Username *"
+        />
       </View>
       <View style={styles.inputView}>
-        <TextInput style={styles.inputText} placeholder="Password *" />
+        <TextInput
+          style={styles.inputText}
+          placeholder="Password *"
+        />
       </View>
       <TouchableOpacity>
         <Text style={styles.forgotPassword}>Forgot Password?</Text>

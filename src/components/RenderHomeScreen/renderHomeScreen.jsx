@@ -1,29 +1,27 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 // import { Entypo } from '@expo/vector-icons';
-import { takePhoto, selectFromCameraRoll } from '../../services/imageService';
+import { takePhoto } from '../../services/imageService';
 import styles from './styles';
 
 class RenderHomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // eslint-disable-next-line react/no-unused-state
       imageUri: ''
     };
   }
 
+  // Calls takePhoto from imageService
   async takePhoto() {
     const photo = await takePhoto();
-    // eslint-disable-next-line react/no-unused-state
     this.setState({ imageUri: photo });
   }
 
-  async selectFromCameraRoll() {
-    const photo = await selectFromCameraRoll();
-    // eslint-disable-next-line react/no-unused-state
-    this.setState({ imageUri: photo });
-  }
+  // async selectFromCameraRoll() {
+  //   const photo = await selectFromCameraRoll();
+  //   this.setState({ imageUri: photo });
+  // }
 
   render() {
     const { imageUri } = this.state;
