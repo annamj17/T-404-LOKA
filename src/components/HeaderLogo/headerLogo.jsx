@@ -1,26 +1,29 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, TouchableOpacity } from 'react-native';
 
 import logoImage from '../../../assets/K3imaginelogo.png';
+import hamburgerLogo from '../../../assets/Hamburger_icon.svg.png';
+import styles from './styles';
 
-class HeaderImage extends React.Component {
-  render() {
-    return (
-      <View style={{ flexDirection: 'row' }}>
+const HeaderImage = () => {
+  return (
+    <View style={styles.container}>
+      <TouchableOpacity>
         <Image
+          style={styles.logo}
           source={logoImage}
-          style={{
-            width: 130,
-            height: 130,
-            borderRadius: 40 / 2,
-            marginLeft: 25
-          }}
           resizeMode="contain"
         />
-      </View>
-    );
-  }
-}
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Image
+          style={styles.hamburgerLogo}
+          source={hamburgerLogo}
+          resizeMode="contain"
+        />
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 export default HeaderImage;
