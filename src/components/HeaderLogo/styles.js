@@ -2,18 +2,24 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    flexDirection: 'row'
+    display: 'flex',
+    width: '100%'
+  },
+  navbar: {
+    flexDirection: 'row',
+    maxWidth: '1024px',
+    minWidth: '320px',
+    height: 64,
+    justifyContent: 'space-between'
   },
   logo: {
-    width: 150,
-    height: 110,
-    borderRadius: 40 / 2,
-    marginLeft: 25
+    width: '150px',
+    height: '64px'
   },
   hamburgerLogo: {
-    width: 30,
-    height: 110,
-    borderRadius: 40 / 2,
-    marginLeft: 150
+    width: '30px',
+    height: '64px'
+    // float: 'right'
+    // position: 'absolute'
   }
 });
