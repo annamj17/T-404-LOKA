@@ -43,7 +43,7 @@ const RenderLogin = () => {
       <Image
         style={styles.bottomImage}
         source={bottomImage}
-        resizeMode="cover"
+        resizeMode="stretch"
       />
     </View>
   );

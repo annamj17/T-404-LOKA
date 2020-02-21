@@ -3,29 +3,29 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   screens: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 200
+    flexDirection: 'column',
+    height: '100%'
   },
-  image: {
+  iconsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     alignSelf: 'center',
-    height: 300,
-    width: 300,
-    borderWidth: 1,
-    borderRadius: 10,
-    marginTop: 10
+    width: 270,
+    height: 100
   },
   icon: {
-    marginTop: 50
+    fontSize: 90
   },
-  btn: {
-    width: 200,
-    height: 60,
-    alignItems: 'center',
-    justifyContent: 'center',
-    // borderWidth: 1,
-    // borderRadius: 20,
-    marginTop: 20,
-    backgroundColor: '#318F95'
+  textCss: {
+    fontSize: 25,
+    alignSelf: 'center',
+    marginTop: 200,
+    color: '#318F95',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold'
+  },
+  imageContainer: {
+    marginTop: 'auto',
+    height: '15%'
   }
 });

@@ -1,7 +1,13 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
-import { takePhoto } from '../../services/imageService';
+import { Entypo } from '@expo/vector-icons';
+import {
+  takePhoto,
+  selectFromCameraRoll
+} from '../../services/imageService';
 import styles from './styles';
+
+import bottomImage from '../../../assets/Capture.png';
 
 class RenderHomeScreen extends React.Component {
   constructor(props) {
@@ -17,10 +23,11 @@ class RenderHomeScreen extends React.Component {
     this.setState({ imageUri: photo });
   }
 
-  // async selectFromCameraRoll() {
-  //   const photo = await selectFromCameraRoll();
-  //   this.setState({ imageUri: photo });
-  // }
+  // Calls selectFromCameraRoll from imageService
+  async selectFromCameraRoll() {
+    const photo = await selectFromCameraRoll();
+    this.setState({ imageUri: photo });
+  }
 
   render() {
     const { imageUri } = this.state;
@@ -30,14 +37,24 @@ class RenderHomeScreen extends React.Component {
           <Image source={{ uri: imageUri }} style={styles.image} />
         ) : (
           <View>
-            <TouchableOpacity onPress={() => this.takePhoto()}>
-              <Text style={styles.btn}>Add Item</Text>
-            </TouchableOpacity>
-            {/* <TouchableOpacity onPress={() => this.selectFromCameraRoll()}>
-              <Entypo style={styles.icon} name="image" />
-            </TouchableOpacity> */}
+            <Text style={styles.textCss}>Add New Item</Text>
+            <View style={styles.iconsContainer}>
+              <TouchableOpacity onPress={() => this.takePhoto()}>
+                <Entypo style={styles.icon} name="camera" />
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.selectFromCameraRoll()}
+              >
+                <Entypo style={styles.icon} name="image" />
+              </TouchableOpacity>
+            </View>
           </View>
         )}
+        <Image
+          style={styles.imageContainer}
+          source={bottomImage}
+          resizeMode="stretch"
+        />
       </View>
     );
   }
