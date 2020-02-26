@@ -17,7 +17,7 @@ export default StyleSheet.create({
     fontSize: 90
   },
   image: {
-    height: '40%',
+    height: '90%',
     width: '70%',
     alignSelf: 'center',
     borderRadius: 10
@@ -33,5 +33,31 @@ export default StyleSheet.create({
   imageContainer: {
     marginTop: 'auto',
     height: '15%'
+  },
+  container: {
+    flex: 1,
+    paddingTop: 70
+  },
+  item: {
+    padding: 8,
+    fontSize: 18,
+    height: 80,
+    color: 'grey',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    marginVertical: 8,
+    marginHorizontal: 40
+  },
+  title: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    color: '#318F95',
+    backgroundColor: '#D3D3D3',
+    borderRadius: 10,
+    height: 30,
+    width: 100
   }
 });
