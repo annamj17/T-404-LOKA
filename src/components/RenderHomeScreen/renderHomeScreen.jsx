@@ -1,5 +1,11 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  FlatList
+} from 'react-native';
 import { Entypo } from '@expo/vector-icons';
 import {
   takePhoto,
@@ -34,7 +40,25 @@ class RenderHomeScreen extends React.Component {
     return (
       <View style={styles.screens}>
         {imageUri ? (
-          <Image source={{ uri: imageUri }} style={styles.image} />
+          <View>
+            <Image source={{ uri: imageUri }} style={styles.image} />
+            <View>
+              <FlatList
+                data={[
+                  { key: 'Color' },
+                  { key: 'Type' },
+                  { key: 'Brand' }
+                ]}
+                renderItem={({ item }) => (
+                  <Text style={styles.item}>{item.key}</Text>
+                )}
+              />
+              {/* <Text style={styles.title}>Confirm tags</Text> */}
+            </View>
+            <TouchableOpacity style={styles.title}>
+              <Text>Confirm tags</Text>
+            </TouchableOpacity>
+          </View>
         ) : (
           <View>
             <Text style={styles.textCss}>Add New Item</Text>
