@@ -8,22 +8,20 @@ import styles from './styles';
 const HeaderImage = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.navbar}>
-        <TouchableOpacity>
-          <Image
-            style={styles.logo}
-            source={logoImage}
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image
-            style={styles.hamburgerLogo}
-            source={hamburgerLogo}
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
-      </View>
+      <TouchableOpacity>
+        <Image
+          style={styles.logo}
+          source={logoImage}
+          resizeMode="contain"
+        />
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Image
+          style={styles.hamburgerLogo}
+          source={hamburgerLogo}
+          resizeMode="contain"
+        />
+      </TouchableOpacity>
     </View>
   );
 };
