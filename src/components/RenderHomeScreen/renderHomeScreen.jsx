@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import {
   View,
@@ -12,7 +14,6 @@ import {
   selectFromCameraRoll
 } from '../../services/imageService';
 import styles from './styles';
-
 import bottomImage from '../../../assets/Capture.png';
 
 class RenderHomeScreen extends React.Component {
@@ -53,9 +54,14 @@ class RenderHomeScreen extends React.Component {
                   <Text style={styles.item}>{item.key}</Text>
                 )}
               />
-              {/* <Text style={styles.title}>Confirm tags</Text> */}
             </View>
-            <TouchableOpacity style={styles.title}>
+            <TouchableOpacity
+              style={styles.title}
+              // eslint-disable-next-line no-undef
+              onPress={() =>
+                // eslint-disable-next-line prettier/prettier
+                this.props.navigation.navigate('ProductView')}
+            >
               <Text>Confirm tags</Text>
             </TouchableOpacity>
           </View>
