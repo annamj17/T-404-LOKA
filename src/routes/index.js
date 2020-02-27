@@ -3,15 +3,22 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 // import LoginView from '../views/LoginView/LoginView';
-// import HomeView from '../views/HomeView/HomeView';
+import HomeView from '../views/HomeView/HomeView';
 import ProductView from '../views/ProductView/ProductView';
 // import HeaderImage from '../components/HeaderLogo/headerLogo';
 
 const StackNavigator = createStackNavigator(
   {
+    HomeView: {
+      screen: HomeView
+    },
+    ProductView: {
+      screen: ProductView
+    }
+
     // LoginView
     // HomeView,
-    ProductView
+    // ProductView
     // Login: { screen: LoginView, navigationOptions: { headerShown: false } }
   },
   {
