@@ -58,9 +58,10 @@ class RenderHomeScreen extends React.Component {
             <TouchableOpacity
               style={styles.title}
               // eslint-disable-next-line no-undef
-              onPress={() =>
+              onPress={
+                () => this.props.navigation.navigate('PriceView')
                 // eslint-disable-next-line prettier/prettier
-                this.props.navigation.navigate('ProductView')}
+              }
             >
               <Text>Confirm tags</Text>
             </TouchableOpacity>
