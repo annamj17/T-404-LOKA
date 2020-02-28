@@ -1,19 +1,20 @@
-// import React from 'react';
+import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 // import LoginView from '../views/LoginView/LoginView';
 import HomeView from '../views/HomeView/HomeView';
-import ProductView from '../views/ProductView/ProductView';
-// import HeaderImage from '../components/HeaderLogo/headerLogo';
+import PriceView from '../views/PriceView/PriceView';
+import RightHeaderLogo from '../components/HeaderLogo/RightHeaderLogo/rightHeaderLogo';
+import LeftHeaderLogo from '../components/HeaderLogo/LeftHeaderLogo/leftHeaderLogo';
 
 const StackNavigator = createStackNavigator(
   {
     HomeView: {
       screen: HomeView
     },
-    ProductView: {
-      screen: ProductView
+    PriceView: {
+      screen: PriceView
     }
 
     // LoginView
@@ -24,15 +25,15 @@ const StackNavigator = createStackNavigator(
   {
     defaultNavigationOptions: {
       headerStyle: {
-        height: 80,
-        width: '500px'
-        // backgroundColor: '#087E8B',
+        height: 80
         // elevation: 0, // Remove shadow from android
         // shadowOpacity: 0, // Remove shadow from ios
         // borderBottomWidth: 0
       },
+      headerRight: () => <RightHeaderLogo />,
+      headerTitle: () => <LeftHeaderLogo />,
       headerBackTitle: 'back',
-      headerTintColor: '#F9F9F9'
+      headerTintColor: 'black'
     }
   }
 );

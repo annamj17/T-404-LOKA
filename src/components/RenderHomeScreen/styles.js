@@ -17,7 +17,7 @@ export default StyleSheet.create({
     fontSize: 90
   },
   image: {
-    height: '90%',
+    height: '50%',
     width: '70%',
     alignSelf: 'center',
     borderRadius: 10
@@ -45,7 +45,7 @@ export default StyleSheet.create({
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
-    marginVertical: 8,
+    marginVertical: 3,
     marginHorizontal: 40
   },
   title: {
