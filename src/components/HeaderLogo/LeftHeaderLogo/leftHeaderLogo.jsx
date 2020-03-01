@@ -1,3 +1,5 @@
+/* eslint-disable react/no-this-in-sfc */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
 
@@ -10,6 +12,7 @@ const HeaderImage = () => {
       <TouchableOpacity>
         <Image
           style={styles.logo}
+          onPress={() => this.props.navigation.navigate('HomeView')}
           source={logoImage}
           resizeMode="contain"
         />
