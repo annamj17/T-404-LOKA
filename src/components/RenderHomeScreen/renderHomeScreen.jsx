@@ -1,18 +1,9 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-  FlatList
-} from 'react-native';
+import { View, Text, TouchableOpacity, Image, FlatList } from 'react-native';
 import { Entypo } from '@expo/vector-icons';
-import {
-  takePhoto,
-  selectFromCameraRoll
-} from '../../services/imageService';
+import PropTypes from 'prop-types';
+import { takePhoto, selectFromCameraRoll } from '../../services/imageService';
+
 import styles from './styles';
 import bottomImage from '../../../assets/Capture.png';
 
@@ -38,6 +29,7 @@ class RenderHomeScreen extends React.Component {
 
   render() {
     const { imageUri } = this.state;
+    const { navigation } = this.props;
     return (
       <View style={styles.screens}>
         {imageUri ? (
@@ -45,11 +37,7 @@ class RenderHomeScreen extends React.Component {
             <Image source={{ uri: imageUri }} style={styles.image} />
             <View>
               <FlatList
-                data={[
-                  { key: 'Color' },
-                  { key: 'Type' },
-                  { key: 'Brand' }
-                ]}
+                data={[{ key: 'Color' }, { key: 'Type' }, { key: 'Brand' }]}
                 renderItem={({ item }) => (
                   <Text style={styles.item}>{item.key}</Text>
                 )}
@@ -57,11 +45,7 @@ class RenderHomeScreen extends React.Component {
             </View>
             <TouchableOpacity
               style={styles.title}
-              // eslint-disable-next-line no-undef
-              onPress={
-                () => this.props.navigation.navigate('PriceView')
-                // eslint-disable-next-line prettier/prettier
-              }
+              onPress={() => navigation.navigate('PriceView')}
             >
               <Text>Confirm tags</Text>
             </TouchableOpacity>
@@ -73,9 +57,7 @@ class RenderHomeScreen extends React.Component {
               <TouchableOpacity onPress={() => this.takePhoto()}>
                 <Entypo style={styles.icon} name="camera" />
               </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => this.selectFromCameraRoll()}
-              >
+              <TouchableOpacity onPress={() => this.selectFromCameraRoll()}>
                 <Entypo style={styles.icon} name="image" />
               </TouchableOpacity>
             </View>
@@ -92,3 +74,9 @@ class RenderHomeScreen extends React.Component {
 }
 
 export default RenderHomeScreen;
+
+RenderHomeScreen.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func.isRequired
+  }).isRequired
+};
