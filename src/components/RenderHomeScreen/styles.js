@@ -10,6 +10,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignSelf: 'center',
+    // paddingTop: 30,
     width: 270,
     height: '100%'
   },
@@ -17,8 +18,9 @@ export default StyleSheet.create({
     fontSize: 90
   },
   image: {
-    height: '50%',
-    width: '70%',
+    marginTop: 30,
+    height: '45%',
+    width: '90%',
     alignSelf: 'center',
     borderRadius: 10
   },
@@ -32,32 +34,33 @@ export default StyleSheet.create({
   },
   imageContainer: {
     marginTop: 'auto',
-    height: '15%'
+    height: '12%'
   },
-  container: {
-    flex: 1,
-    paddingTop: 70
-  },
-  item: {
-    padding: 8,
+  tagItem: {
+    alignSelf: 'center',
+    paddingTop: 20,
+    width: 250,
+    height: 50,
+    marginBottom: 10,
     fontSize: 18,
-    height: 80,
     color: 'grey',
     fontFamily: 'Helvetica',
-    fontWeight: 'bold',
-    marginVertical: 3,
-    marginHorizontal: 40
+    fontWeight: 'bold'
   },
-  title: {
+  confirmContainer: {
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
+    backgroundColor: '#318F95',
+    borderRadius: 10,
+    marginTop: 30,
+    height: 60,
+    width: 200
+  },
+  confirmText: {
+    color: 'white',
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
-    color: '#318F95',
-    backgroundColor: '#D3D3D3',
-    borderRadius: 10,
-    height: 30,
-    width: 100
+    fontSize: 20
   }
 });
