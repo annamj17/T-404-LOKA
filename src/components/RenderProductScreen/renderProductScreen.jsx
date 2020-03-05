@@ -1,51 +1,82 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
 import PropTypes from 'prop-types';
 
 import styles from './styles';
 import bottomImage from '../../../assets/Capture.png';
 
-const data = [
-  {
-    id: 1,
-    color: '  Black',
-    type: '  Hoodie',
-    brand: '  Nike'
-  }
-];
-
 class RenderProductScreen extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      productTag: [
+        {
+          id: 1,
+          color: 'Black',
+          type: 'Hoodie',
+          brand: 'Nike'
+        }
+      ]
+    };
+    this.editTag = this.editTag.bind(this);
+  }
+
+  editTag(newTag) {
+    this.setState({
+      productTag: newTag
+    });
   }
 
   render() {
     const { navigation } = this.props;
     const image = navigation.state;
-
+    const { productTag } = this.state;
     return (
       <View style={styles.screens}>
         <View>
           <Image source={{ uri: image.params.photo }} style={styles.image} />
-          <Card containerStyle={{ padding: 0 }}>
-            {data.map(tags => {
+          <Card containerStyle={{ padding: 10 }}>
+            {productTag.map(tags => {
               return (
                 <View key={tags.id}>
-                  <Text style={styles.tagItem}>
-                    Color:
-                    {tags.color}
-                  </Text>
-                  <Text style={styles.tagItem}>
-                    Type:
-                    {tags.type}
-                  </Text>
-                  <Text style={styles.tagItem}>
-                    Brand:
-                    {tags.brand}
-                  </Text>
+                  <View style={styles.tagContainer}>
+                    <Text style={styles.product}>Color:</Text>
+                    <TextInput
+                      style={styles.tagItem}
+                      maxLength={20}
+                      placeholderTextColor="gray"
+                      placeholder={tags.color}
+                      autoCapitalize="none"
+                      onPress={this.editTag}
+                      value={this.color}
+                    />
+                  </View>
+                  <View style={styles.tagContainer}>
+                    <Text style={styles.product}>Type:</Text>
+                    <TextInput
+                      style={styles.tagItem}
+                      maxLength={20}
+                      placeholderTextColor="gray"
+                      placeholder={tags.type}
+                      autoCapitalize="none"
+                      onPress={this.editTag}
+                      value={this.type}
+                    />
+                  </View>
+                  <View style={styles.tagContainer}>
+                    <Text style={styles.product}>Brand:</Text>
+                    <TextInput
+                      style={styles.tagItem}
+                      maxLength={20}
+                      placeholderTextColor="gray"
+                      placeholder={tags.brand}
+                      autoCapitalize="none"
+                      onPress={this.editTag}
+                      value={this.brand}
+                    />
+                  </View>
                 </View>
               );
             })}

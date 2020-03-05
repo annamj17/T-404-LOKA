@@ -17,16 +17,36 @@ export default StyleSheet.create({
     marginTop: 'auto',
     height: '12%'
   },
-  tagItem: {
-    alignSelf: 'center',
-    paddingTop: 20,
-    width: 250,
-    height: 50,
-    marginBottom: 10,
+  tagContainer: {
+    width: 100,
+    height: 40,
+    marginLeft: 30,
+    marginRight: 30,
+    paddingTop: 10,
+    marginTop: 5,
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold'
+  },
+  product: {
+    color: 'black',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    fontSize: 18
+  },
+  tagItem: {
+    width: 100,
+    height: 30,
+    marginLeft: 70,
+    marginTop: 'auto',
+    marginBottom: 10,
+    fontSize: 18,
+    color: 'grey',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    borderBottomColor: 'gray',
+    borderBottomWidth: 1
   },
   confirmContainer: {
     alignItems: 'center',
