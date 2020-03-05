@@ -11,16 +11,42 @@ export default StyleSheet.create({
     marginTop: 'auto',
     height: '12%'
   },
-  tagItem: {
-    alignSelf: 'center',
-    paddingTop: 20,
-    width: 250,
-    height: 50,
-    marginBottom: 10,
+  priceContainer: {
+    width: 300,
+    height: 30,
+    paddingTop: 2,
+    marginTop: 5,
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold'
+  },
+  priceText: {
+    color: 'black',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    fontSize: 20
+  },
+  priceItem: {
+    width: 50,
+    height: 30,
+    marginLeft: 'auto',
+    marginTop: 'auto',
+    fontSize: 20,
+    color: 'grey',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    borderBottomColor: 'gray',
+    borderBottomWidth: 1
+  },
+  priceSign: {
+    height: 27,
+    marginLeft: 'auto',
+    marginTop: 'auto',
+    color: 'grey',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    fontSize: 20
   },
   registerContainer: {
     alignItems: 'center',
