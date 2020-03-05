@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import RenderPriceScreen from '../../components/RenderPriceScreen/renderPriceScreen';
+import RenderFinalScreen from '../../components/RenderFinalScreen/renderFinalScreen';
 
 const styles = StyleSheet.create({
   screens: {
@@ -11,22 +11,22 @@ const styles = StyleSheet.create({
   }
 });
 
-class PriceView extends React.Component {
+class FinalView extends React.Component {
   static navigationOptions = {};
 
   render() {
     const { navigation } = this.props;
     return (
       <View style={styles.screens}>
-        <RenderPriceScreen navigation={navigation} />
+        <RenderFinalScreen navigation={navigation} />
       </View>
     );
   }
 }
 
-export default connect()(PriceView);
+export default connect()(FinalView);
 
-PriceView.propTypes = {
+FinalView.propTypes = {
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired
   }).isRequired
