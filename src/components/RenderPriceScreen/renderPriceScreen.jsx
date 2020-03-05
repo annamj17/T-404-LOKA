@@ -1,43 +1,66 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, TextInput } from 'react-native';
 import { Card } from 'react-native-elements';
 import PropTypes from 'prop-types';
 
 import bottomImage from '../../../assets/Capture.png';
 import styles from './styles';
 
-const data = [
-  {
-    id: 1,
-    fullConditionPrice: '  50£',
-    resalePrice: '  25£'
-  }
-];
-
 class RenderPriceScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // imageUri: ''
+      prices: [
+        {
+          id: 1,
+          fullConditionPrice: '50',
+          resalePrice: '25'
+        }
+      ]
     };
+  }
+
+  editPrice(newPrice) {
+    this.setState({
+      prices: newPrice
+    });
   }
 
   render() {
     const { navigation } = this.props;
+    const { prices } = this.state;
     return (
       <View style={styles.screens}>
         <Card containerStyle={{ padding: 50 }}>
-          {data.map(tags => {
+          {prices.map(tags => {
             return (
               <View key={tags.id}>
-                <Text style={styles.tagItem}>
-                  Full Condition Price:
-                  {tags.fullConditionPrice}
-                </Text>
-                <Text style={styles.tagItem}>
-                  Resale Price:
-                  {tags.resalePrice}
-                </Text>
+                <View style={styles.priceContainer}>
+                  <Text style={styles.priceText}>Full Condition Price:</Text>
+                  <TextInput
+                    style={styles.priceItem}
+                    maxLength={20}
+                    placeholderTextColor="gray"
+                    placeholder={tags.fullConditionPrice}
+                    autoCapitalize="none"
+                    onPress={this.editPrice}
+                    value={this.fullConditionPrice}
+                  />
+                  <Text style={styles.priceSign}>£</Text>
+                </View>
+                <View style={styles.priceContainer}>
+                  <Text style={styles.priceText}>Resale Price:</Text>
+                  <TextInput
+                    style={styles.priceItem}
+                    maxLength={20}
+                    placeholderTextColor="gray"
+                    placeholder={tags.resalePrice}
+                    autoCapitalize="none"
+                    onPress={this.editPrice}
+                    value={this.resalePrice}
+                  />
+                  <Text style={styles.priceSign}>£</Text>
+                </View>
               </View>
             );
           })}
