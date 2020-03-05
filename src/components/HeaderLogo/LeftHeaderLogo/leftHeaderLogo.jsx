@@ -10,7 +10,7 @@ const HeaderImage = () => {
       <TouchableOpacity>
         <Image
           style={styles.logo}
-          // onPress={() => navigation.navigate('LoginView')}
+          // onPress={() => navigation.navigate('HomeView')}
           source={logoImage}
           resizeMode="contain"
         />

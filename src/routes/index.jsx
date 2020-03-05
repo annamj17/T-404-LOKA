@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import LoginView from '../views/LoginView/LoginView';
 import HomeView from '../views/HomeView/HomeView';
 import PriceView from '../views/PriceView/PriceView';
+import ProductView from '../views/ProductView/ProductView';
 import RightHeaderLogo from '../components/HeaderLogo/RightHeaderLogo/rightHeaderLogo';
 import LeftHeaderLogo from '../components/HeaderLogo/LeftHeaderLogo/leftHeaderLogo';
 
@@ -15,6 +16,9 @@ const StackNavigator = createStackNavigator(
     },
     HomeView: {
       screen: HomeView
+    },
+    ProductView: {
+      screen: ProductView
     },
     PriceView: {
       screen: PriceView
