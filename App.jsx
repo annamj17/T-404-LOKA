@@ -4,7 +4,7 @@ import { Provider, connect } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
-// import reducers from './src/reducers';
+import reducers from './src/reducers';
 import AppContainer from './src/routes';
 
 const ConnectedApp = connect(null, null)(AppContainer);
@@ -12,7 +12,7 @@ const ConnectedApp = connect(null, null)(AppContainer);
 export default function App() {
   StatusBar.setBarStyle('dark-content', true);
   return (
-    <Provider store={createStore(applyMiddleware(thunk))}>
+    <Provider store={createStore(reducers, applyMiddleware(thunk))}>
       <ConnectedApp />
     </Provider>
   );
