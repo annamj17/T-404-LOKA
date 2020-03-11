@@ -9,7 +9,7 @@ export default StyleSheet.create({
   image: {
     marginTop: 30,
     height: '45%',
-    width: '90%',
+    width: '85%',
     alignSelf: 'center',
     borderRadius: 10
   },
@@ -18,35 +18,29 @@ export default StyleSheet.create({
     height: '12%'
   },
   tagContainer: {
-    width: 100,
-    height: 40,
-    marginLeft: 30,
-    marginRight: 30,
-    paddingTop: 10,
-    marginTop: 5,
+    flexDirection: 'row',
+    height: 35,
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold'
   },
   product: {
+    alignSelf: 'center',
     color: 'black',
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
     fontSize: 18
   },
   tagItem: {
-    width: 100,
-    height: 30,
-    marginLeft: 70,
-    marginTop: 'auto',
-    marginBottom: 10,
+    marginLeft: 40,
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
     borderBottomColor: 'gray',
-    borderBottomWidth: 1
+    borderBottomWidth: 1,
+    alignSelf: 'center'
   },
   confirmContainer: {
     alignItems: 'center',

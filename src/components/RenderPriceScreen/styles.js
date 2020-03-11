@@ -5,17 +5,17 @@ export default StyleSheet.create({
     flexDirection: 'column',
     height: '100%',
     width: '100%',
-    paddingTop: 100
+    paddingTop: 100,
+    alignItems: 'center'
   },
   imageContainer: {
     marginTop: 'auto',
     height: '12%'
   },
   priceContainer: {
-    width: 300,
-    height: 30,
-    paddingTop: 2,
-    marginTop: 5,
+    flexDirection: 'row',
+    height: 40,
+    alignItems: 'center',
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
@@ -25,14 +25,12 @@ export default StyleSheet.create({
     color: 'black',
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
-    fontSize: 20
+    fontSize: 18
   },
   priceItem: {
-    width: 50,
-    height: 30,
-    marginLeft: 'auto',
-    marginTop: 'auto',
-    fontSize: 20,
+    width: 35,
+    marginLeft: 25,
+    fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
@@ -40,9 +38,6 @@ export default StyleSheet.create({
     borderBottomWidth: 1
   },
   priceSign: {
-    height: 27,
-    marginLeft: 'auto',
-    marginTop: 'auto',
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold',

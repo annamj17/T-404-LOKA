@@ -29,7 +29,7 @@ const RenderLogin = ({ navigation }) => {
         <Text> Login </Text>
       </TouchableOpacity>
       <Image
-        style={styles.bottomImage}
+        style={styles.imageContainer}
         source={bottomImage}
         resizeMode="stretch"
       />
