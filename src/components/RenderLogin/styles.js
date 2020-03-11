@@ -47,8 +47,8 @@ export default StyleSheet.create({
     marginLeft: 40,
     backgroundColor: '#D3D3D3'
   },
-  bottomImage: {
+  imageContainer: {
     marginTop: 'auto',
-    height: '15%'
+    height: '12%'
   }
 });

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { View, Text, Image, Button } from 'react-native';
@@ -13,8 +14,8 @@ const data = [
     color: '  Black',
     type: '  Hoodie',
     brand: '  Nike',
-    fullConditionPrice: '  50£',
-    resalePrice: '  25£'
+    fullConditionPrice: '  50',
+    resalePrice: '  25'
   }
 ];
 
@@ -26,14 +27,13 @@ class RenderFinalScreen extends React.Component {
 
   render() {
     const { navigation } = this.props;
-
     return (
       <View style={styles.screens}>
-        <View>
-          <Card title="Registered Product">
-            {data.map(tags => {
-              return (
-                <View key={tags.id}>
+        <Card title="Registered Product" containerStyle={{ padding: 30 }}>
+          {data.map(tags => {
+            return (
+              <View key={tags.id}>
+                <View style={styles.productContainer}>
                   <Text style={styles.tagItem}>
                     Color:
                     {tags.color}
@@ -49,26 +49,27 @@ class RenderFinalScreen extends React.Component {
                   <Text style={styles.tagItem}>
                     Full Condition Price:
                     {tags.fullConditionPrice}
+                    <Text>£</Text>
                   </Text>
                   <Text style={styles.tagItem}>
                     Resale Price:
                     {tags.resalePrice}
+                    <Text>£</Text>
                   </Text>
                 </View>
-              );
-            })}
-          </Card>
-          <Card title="Thank you">
-            <Text style={styles.thankMessage}>
-              Your product has been registered
-            </Text>
-            <Button
-              style={styles.backHome}
-              onPress={() => navigation.navigate('HomeView')}
-              title="Go back to home page"
-            />
-          </Card>
-        </View>
+              </View>
+            );
+          })}
+        </Card>
+        <Card title="Thank you">
+          <Text style={styles.thankMessage}>
+            Your product has been registered
+          </Text>
+          <Button
+            onPress={() => navigation.navigate('HomeView')}
+            title="Go back to home page"
+          />
+        </Card>
         <Image
           style={styles.imageContainer}
           source={bottomImage}

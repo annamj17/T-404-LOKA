@@ -4,26 +4,29 @@ export default StyleSheet.create({
   screens: {
     flexDirection: 'column',
     height: '100%',
-    width: '100%',
-    paddingTop: 20
-  },
-  image: {
-    marginTop: 30,
-    height: '45%',
-    width: '90%',
-    alignSelf: 'center',
-    borderRadius: 10
+    width: '100%'
+    // justifyContent: 'center',
+    // alignContent: 'center',
+    // alignSelf: 'center',
+    // alignItems: 'center'
   },
   imageContainer: {
     marginTop: 'auto',
     height: '12%'
   },
+  productContainer: {
+    // flexDirection: 'column',
+    // alignSelf: 'center',
+    fontSize: 18,
+    color: 'grey',
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold'
+  },
   tagItem: {
-    alignSelf: 'center',
-    paddingTop: 20,
-    width: 250,
-    height: 50,
-    marginBottom: 10,
+    paddingTop: 10,
+    width: '100%',
+    height: 40,
+    // marginBottom: 10,
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
@@ -32,33 +35,11 @@ export default StyleSheet.create({
   thankMessage: {
     alignSelf: 'center',
     paddingTop: 10,
-    width: 300,
-    height: 50,
+    width: '100%',
+    height: 40,
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
     fontWeight: 'bold'
-  },
-  backHome: {
-    borderRadius: 0,
-    marginLeft: 0,
-    marginRight: 0,
-    marginBottom: 0
-  },
-  backHomeContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    backgroundColor: '#318F95',
-    borderRadius: 10,
-    marginTop: 30,
-    height: 60,
-    width: 200
-  },
-  confirmText: {
-    color: 'white',
-    fontFamily: 'Helvetica',
-    fontWeight: 'bold',
-    fontSize: 20
   }
 });

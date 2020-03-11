@@ -13,7 +13,7 @@ class RenderPriceScreen extends React.Component {
       prices: [
         {
           id: 1,
-          fullConditionPrice: '50',
+          fullConditionPrice: '60',
           resalePrice: '25'
         }
       ]
@@ -31,7 +31,7 @@ class RenderPriceScreen extends React.Component {
     const { prices } = this.state;
     return (
       <View style={styles.screens}>
-        <Card containerStyle={{ padding: 50 }}>
+        <Card containerStyle={{ padding: 30 }}>
           {prices.map(tags => {
             return (
               <View key={tags.id}>
@@ -71,13 +71,6 @@ class RenderPriceScreen extends React.Component {
         >
           <Text style={styles.registerText}>Register item</Text>
         </TouchableOpacity>
-        {/* {imageUri ? (
-          <Image source={{ uri: imageUri }} style={styles.image} />
-        ) : (
-          <View>
-            <Text>Sorry no image found</Text>
-          </View>
-        )} */}
         <Image
           style={styles.imageContainer}
           source={bottomImage}

@@ -37,7 +37,7 @@ class RenderProductScreen extends React.Component {
       <View style={styles.screens}>
         <View>
           <Image source={{ uri: image.params.photo }} style={styles.image} />
-          <Card containerStyle={{ padding: 10 }}>
+          <Card containerStyle={{ padding: 20 }}>
             {productTag.map(tags => {
               return (
                 <View key={tags.id}>
