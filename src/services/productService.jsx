@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
+
+// GATEWAY ENDAPUNKTUR
 const ENDPOINT = '';
 
-const getAllCinemas = async () => {
-  // eslint-disable-next-line no-undef
+const getAllTagsForProduct = async () => {
   return fetch(ENDPOINT, {
     method: 'GET',
     headers: {}
@@ -12,4 +14,4 @@ const getAllCinemas = async () => {
     });
 };
 
-export default getAllCinemas;
+export default { getAllTagsForProduct };

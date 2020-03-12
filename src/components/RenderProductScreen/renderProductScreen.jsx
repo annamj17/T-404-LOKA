@@ -15,7 +15,7 @@ class RenderProductScreen extends React.Component {
         {
           id: 1,
           color: 'Black',
-          type: 'Hoodie',
+          type: 'Sweatshirt',
           brand: 'Nike'
         }
       ]
