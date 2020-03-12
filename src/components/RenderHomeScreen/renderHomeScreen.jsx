@@ -33,8 +33,6 @@ class RenderHomeScreen extends React.Component {
   }
 
   render() {
-    // const { imageUri } = this.state;
-    // const { navigation } = this.props;
     return (
       <View style={styles.screens}>
         <View>
@@ -57,13 +55,6 @@ class RenderHomeScreen extends React.Component {
     );
   }
 }
-
-// <TouchableOpacity
-//   style={styles.confirmContainer}
-//   onPress={() => navigation.navigate('PriceView')}
-// >
-//   <Text style={styles.confirmText}>Confirm tags</Text>
-// </TouchableOpacity>;
 
 export default RenderHomeScreen;
 

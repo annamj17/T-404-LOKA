@@ -5,18 +5,12 @@ export default StyleSheet.create({
     flexDirection: 'column',
     height: '100%',
     width: '100%'
-    // justifyContent: 'center',
-    // alignContent: 'center',
-    // alignSelf: 'center',
-    // alignItems: 'center'
   },
   imageContainer: {
     marginTop: 'auto',
     height: '12%'
   },
   productContainer: {
-    // flexDirection: 'column',
-    // alignSelf: 'center',
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',
@@ -26,7 +20,6 @@ export default StyleSheet.create({
     paddingTop: 10,
     width: '100%',
     height: 40,
-    // marginBottom: 10,
     fontSize: 18,
     color: 'grey',
     fontFamily: 'Helvetica',

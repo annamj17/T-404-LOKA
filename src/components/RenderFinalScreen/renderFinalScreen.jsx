@@ -11,9 +11,9 @@ import bottomImage from '../../../assets/Capture.png';
 const data = [
   {
     id: 1,
-    color: '  Black',
-    type: '  Hoodie',
-    brand: '  Nike',
+    color: ' Black',
+    type: '  Sweatshirt',
+    brand: ' Nike',
     fullConditionPrice: '  50',
     resalePrice: '  25'
   }

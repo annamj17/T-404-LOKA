@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
@@ -18,7 +19,7 @@ class ProductView extends React.Component {
   render() {
     const { navigation } = this.props;
     const { params } = navigation.state;
-    // console.log('HER!!!!!!', params);
+    console.log('HER!!!!!!', params);
     return (
       <View style={styles.screens}>
         <RenderProductScreen navigation={navigation} photoData={params} />
