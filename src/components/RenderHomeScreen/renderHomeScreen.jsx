@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/no-unused-state */
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
@@ -28,6 +29,7 @@ class RenderHomeScreen extends React.Component {
   async selectFromCameraRoll() {
     const { navigation } = this.props;
     const photo = await selectFromCameraRoll();
+    console.log('HALLO');
     this.setState({ imageUri: photo });
     navigation.navigate('ProductView', { photo });
   }
