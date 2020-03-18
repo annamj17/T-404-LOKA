@@ -1,5 +1,7 @@
+/* eslint-disable no-console */
 import * as ImagePicker from 'expo-image-picker';
 import * as Permissions from 'expo-permissions';
+import { getAllTagsForProduct } from './productService';
 
 // Prompt the user for types of permissions
 const getPermission = async permissionTypes => {
@@ -22,6 +24,8 @@ export const selectFromCameraRoll = async () => {
   if (result.cancelled) {
     return '';
   }
+  const photo = result.uri;
+  getAllTagsForProduct(photo);
   return result.uri;
 };
 
@@ -39,5 +43,7 @@ export const takePhoto = async () => {
   if (result.cancelled) {
     return '';
   }
+  const photo = result.uri;
+  getAllTagsForProduct(photo);
   return result.uri;
 };
