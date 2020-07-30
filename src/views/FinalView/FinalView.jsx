@@ -1,7 +1,5 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 
 import RenderFinalScreen from '../../components/RenderFinalScreen/renderFinalScreen';
 
@@ -12,22 +10,19 @@ const styles = StyleSheet.create({
 });
 
 class FinalView extends React.Component {
-  static navigationOptions = {};
+  static navigationOptions = {
+    headerShown: false
+  };
 
   render() {
     const { navigation } = this.props;
+    const { params } = navigation.state;
     return (
       <View style={styles.screens}>
-        <RenderFinalScreen navigation={navigation} />
+        <RenderFinalScreen navigation={navigation} productData={params} />
       </View>
     );
   }
 }
 
-export default connect()(FinalView);
-
-FinalView.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired
-  }).isRequired
-};
+export default FinalView;

@@ -1,9 +1,5 @@
-/* eslint-disable no-console */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 
 import RenderProductScreen from '../../components/RenderProductScreen/renderProductScreen';
 
@@ -13,25 +9,15 @@ const styles = StyleSheet.create({
   }
 });
 
-class ProductView extends React.Component {
-  static navigationOptions = {};
-
-  render() {
-    const { navigation } = this.props;
-    const { params } = navigation.state;
-    // console.log('HER!!!!!!', params);
-    return (
-      <View style={styles.screens}>
-        <RenderProductScreen navigation={navigation} photoData={params} />
-      </View>
-    );
-  }
-}
-
-export default connect()(ProductView);
-
-ProductView.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired
-  }).isRequired
+const ProductView = ({ navigation }) => {
+  const { params } = navigation.state;
+  const data = params.theTags;
+  const photo = params.thePhoto;
+  return (
+    <View style={styles.screens}>
+      <RenderProductScreen navigation={navigation} photoData={photo} productData={data} />
+    </View>
+  );
 };
+
+export default ProductView;

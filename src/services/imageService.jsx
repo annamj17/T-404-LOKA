@@ -1,13 +1,10 @@
-/* eslint-disable no-console */
 import * as ImagePicker from 'expo-image-picker';
 import * as Permissions from 'expo-permissions';
-import { getAllTagsForProduct } from './productService';
+import { getAllTagsForProduct } from './tagsService';
 
 // Prompt the user for types of permissions
 const getPermission = async permissionTypes => {
-  await Promise.all(
-    permissionTypes.map(async type => Permissions.askAsync(type))
-  );
+  await Promise.all(permissionTypes.map(async type => Permissions.askAsync(type)));
 };
 
 // Selecting a photo from the cameraroll
@@ -22,11 +19,12 @@ export const selectFromCameraRoll = async () => {
   });
 
   if (result.cancelled) {
-    return '';
+    return null;
   }
-  const photo = result.uri;
-  getAllTagsForProduct(photo);
-  return result.uri;
+  const image = result.base64;
+  const photoToDisplay = result.uri;
+  const tags = await getAllTagsForProduct(image);
+  return { photoToDisplay, tags };
 };
 
 // Takes a photo using your camera
@@ -41,9 +39,10 @@ export const takePhoto = async () => {
   });
 
   if (result.cancelled) {
-    return '';
+    return null;
   }
-  const photo = result.uri;
-  getAllTagsForProduct(photo);
-  return result.uri;
+  const image = result.base64;
+  const photoToDisplay = result.uri;
+  const tags = await getAllTagsForProduct(image);
+  return { photoToDisplay, tags };
 };

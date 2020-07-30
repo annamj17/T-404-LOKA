@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the Product page without crashing renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": undefined,
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "borderRadius": 10,
+          "height": "35%",
+          "marginTop": 30,
+          "width": "70%",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderColor": "#e1e8ee",
+          "borderWidth": 1,
+          "margin": 15,
+          "marginBottom": 0,
+          "padding": 20,
+          "shadowColor": "rgba(0,0,0, .2)",
+          "shadowOffset": Object {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "transparent",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "color": "grey",
+              "flexDirection": "row",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "height": 35,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "black",
+                "fontSize": 18,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Color:
+          </Text>
+          <TextInput
+            allowFontScaling={true}
+            clearButtonMode="while-editing"
+            defaultValue="Black"
+            maxLength={20}
+            name="color"
+            onChangeText={[Function]}
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderBottomColor": "gray",
+                "borderBottomWidth": 1,
+                "color": "grey",
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginLeft": 20,
+                "width": 100,
+              }
+            }
+            underlineColorAndroid="transparent"
+            value="Black"
+          />
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderBottomColor": "gray",
+                "color": "grey",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginLeft": 10,
+              }
+            }
+          >
+            (9998.00%)
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "color": "grey",
+              "flexDirection": "row",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "height": 35,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "black",
+                "fontSize": 18,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Type:
+          </Text>
+          <TextInput
+            allowFontScaling={true}
+            clearButtonMode="while-editing"
+            defaultValue="Sweatshirt"
+            maxLength={20}
+            name="type"
+            onChangeText={[Function]}
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderBottomColor": "gray",
+                "borderBottomWidth": 1,
+                "color": "grey",
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginLeft": 20,
+                "width": 100,
+              }
+            }
+            underlineColorAndroid="transparent"
+            value="Sweatshirt"
+          />
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderBottomColor": "gray",
+                "color": "grey",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginLeft": 10,
+              }
+            }
+          >
+            (9899.00%)
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "color": "grey",
+              "flexDirection": "row",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "height": 35,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "black",
+                "fontSize": 18,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Brand:
+          </Text>
+          <TextInput
+            allowFontScaling={true}
+            clearButtonMode="while-editing"
+            defaultValue="Nike"
+            maxLength={20}
+            name="brand"
+            onChangeText={[Function]}
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderBottomColor": "gray",
+                "borderBottomWidth": 1,
+                "color": "grey",
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginLeft": 20,
+                "width": 100,
+              }
+            }
+            underlineColorAndroid="transparent"
+            value="Nike"
+          />
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "borderBottomColor": "gray",
+                "color": "grey",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginLeft": 10,
+              }
+            }
+          >
+            (9978.00%)
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "red",
+              "fontSize": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          
+        </Text>
+        <View
+          style={
+            Object {
+              "color": "grey",
+              "flexDirection": "row",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "height": 35,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "black",
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginTop": 15,
+              }
+            }
+          >
+            Full Condition Price:
+          </Text>
+          <TextInput
+            allowFontScaling={true}
+            clearButtonMode="while-editing"
+            defaultValue="50"
+            editable={false}
+            maxLength={20}
+            name="fullConditionPrice"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "grey",
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginLeft": 10,
+                "marginTop": 15,
+              }
+            }
+            underlineColorAndroid="transparent"
+            value="50£"
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "color": "grey",
+              "flexDirection": "row",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "height": 35,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "black",
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginTop": 15,
+              }
+            }
+          >
+            Resale Price:
+          </Text>
+          <TextInput
+            allowFontScaling={true}
+            clearButtonMode="while-editing"
+            defaultValue="25"
+            editable={false}
+            maxLength={20}
+            name="resalePrice"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "grey",
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "marginLeft": 10,
+                "marginTop": 15,
+              }
+            }
+            underlineColorAndroid="transparent"
+            value="25£"
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#318F95",
+          "borderRadius": 10,
+          "height": 50,
+          "justifyContent": "center",
+          "marginTop": 20,
+          "opacity": 1,
+          "width": 190,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 20,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Register Item
+      </Text>
+    </View>
+  </View>
+  <Image
+    resizeMode="stretch"
+    source={1}
+    style={
+      Object {
+        "height": "12%",
+        "marginTop": "auto",
+      }
+    }
+  />
+</View>
+`;

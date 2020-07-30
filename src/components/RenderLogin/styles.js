@@ -1,14 +1,14 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  container: {
+  screens: {
     flex: 1,
     flexDirection: 'column',
     height: '100%'
   },
   logoImage: {
-    width: 350,
-    height: 220,
+    width: 370,
+    height: 280,
     marginTop: 'auto',
     alignSelf: 'center'
   },
@@ -32,13 +32,9 @@ export default StyleSheet.create({
     height: 50,
     color: 'black'
   },
-  forgotPassword: {
-    fontSize: 11,
-    textDecorationLine: 'underline',
-    alignSelf: 'center'
-  },
   btn: {
-    width: 60,
+    flexDirection: 'row',
+    width: 90,
     height: 40,
     alignItems: 'center',
     justifyContent: 'center',
@@ -50,5 +46,9 @@ export default StyleSheet.create({
   imageContainer: {
     marginTop: 'auto',
     height: '12%'
+  },
+  errorText: {
+    color: 'red',
+    textAlign: 'center'
   }
 });

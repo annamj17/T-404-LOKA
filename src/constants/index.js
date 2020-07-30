@@ -1,4 +1,2 @@
-/* Setup all constants */
-// eslint-disable-next-line import/prefer-default-export
-export const GET_ALL_TAGS = 'GET_ALL_TAGS';
-export const EDIT_TAGS_BY_ID = 'EDIT_TAGS_BY_ID';
+export const API_VERSION = 'v1.0';
+export const API_URL = 'https://sustainablefashiongw-dev.k3imagine.com';

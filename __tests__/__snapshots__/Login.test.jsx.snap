@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the Login page without crashing renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "column",
+      "height": "100%",
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Object {
+        "paddingBottom": 0,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      source={1}
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 280,
+          "marginTop": "auto",
+          "width": 370,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 25,
+          "textAlign": "center",
+        }
+      }
+    >
+      Welcome, please log in to your account
+    </Text>
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "borderRadius": 10,
+          "borderWidth": 2,
+          "height": 50,
+          "justifyContent": "center",
+          "marginBottom": 10,
+          "marginTop": 20,
+          "padding": 20,
+          "width": "80%",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        name="userName"
+        onChangeText={[Function]}
+        placeholder="Username *"
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "color": "black",
+            "height": 50,
+          }
+        }
+        textContentType="username"
+        type="text"
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "borderRadius": 10,
+          "borderWidth": 2,
+          "height": 50,
+          "justifyContent": "center",
+          "marginBottom": 10,
+          "marginTop": 20,
+          "padding": 20,
+          "width": "80%",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        name="password"
+        onChangeText={[Function]}
+        placeholder="Password *"
+        rejectResponderTermination={true}
+        secureTextEntry={true}
+        style={
+          Object {
+            "color": "black",
+            "height": 50,
+          }
+        }
+        textContentType="password"
+        type="password"
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#D3D3D3",
+          "borderRadius": 10,
+          "flexDirection": "row",
+          "height": 40,
+          "justifyContent": "center",
+          "marginLeft": 40,
+          "marginTop": 20,
+          "opacity": 1,
+          "width": 90,
+        }
+      }
+    >
+      <Text>
+         Login 
+      </Text>
+      <ActivityIndicator
+        animating={false}
+        color="#999999"
+        hidesWhenStopped={true}
+        size="small"
+      />
+    </View>
+  </View>
+  <Image
+    resizeMode="stretch"
+    source={1}
+    style={
+      Object {
+        "height": "12%",
+        "marginTop": "auto",
+      }
+    }
+  />
+</View>
+`;

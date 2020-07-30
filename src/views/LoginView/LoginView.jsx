@@ -1,7 +1,5 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 
 import RenderLogin from '../../components/RenderLogin/renderLogin';
 
@@ -26,10 +24,4 @@ class LoginView extends React.Component {
   }
 }
 
-export default connect()(LoginView);
-
-LoginView.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired
-  }).isRequired
-};
+export default LoginView;

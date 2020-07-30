@@ -10,7 +10,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignSelf: 'center',
-    // paddingTop: 30,
     width: 270,
     height: '100%'
   },
@@ -29,7 +28,6 @@ export default StyleSheet.create({
     alignSelf: 'center',
     marginTop: 200,
     color: '#318F95',
-    fontFamily: 'Helvetica',
     fontWeight: 'bold'
   },
   imageContainer: {
@@ -44,7 +42,6 @@ export default StyleSheet.create({
     marginBottom: 10,
     fontSize: 18,
     color: 'grey',
-    fontFamily: 'Helvetica',
     fontWeight: 'bold'
   },
   confirmContainer: {
@@ -59,7 +56,6 @@ export default StyleSheet.create({
   },
   confirmText: {
     color: 'white',
-    fontFamily: 'Helvetica',
     fontWeight: 'bold',
     fontSize: 20
   }

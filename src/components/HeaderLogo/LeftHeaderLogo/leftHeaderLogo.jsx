@@ -4,16 +4,15 @@ import { View, Image, TouchableOpacity } from 'react-native';
 import logoImage from '../../../../assets/K3imaginelogo.png';
 import styles from '../styles';
 
-const HeaderImage = () => {
+const HeaderImage = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity>
-        <Image
-          style={styles.logo}
-          // onPress={() => navigation.navigate('HomeView')}
-          source={logoImage}
-          resizeMode="contain"
-        />
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('HomeView');
+        }}
+      >
+        <Image style={styles.logo} source={logoImage} resizeMode="contain" />
       </TouchableOpacity>
     </View>
   );

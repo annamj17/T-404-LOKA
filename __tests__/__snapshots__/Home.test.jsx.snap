@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the Home page without crashing renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#318F95",
+          "fontSize": 25,
+          "fontWeight": "bold",
+          "marginTop": 200,
+        }
+      }
+    >
+      Add New Item
+    </Text>
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "flexDirection": "row",
+          "height": "100%",
+          "justifyContent": "space-around",
+          "width": 270,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text />
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text />
+      </View>
+    </View>
+  </View>
+  <Image
+    resizeMode="stretch"
+    source={1}
+    style={
+      Object {
+        "height": "12%",
+        "marginTop": "auto",
+      }
+    }
+  />
+</View>
+`;

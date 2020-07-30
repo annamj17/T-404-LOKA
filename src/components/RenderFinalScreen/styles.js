@@ -13,7 +13,6 @@ export default StyleSheet.create({
   productContainer: {
     fontSize: 18,
     color: 'grey',
-    fontFamily: 'Helvetica',
     fontWeight: 'bold'
   },
   tagItem: {
@@ -22,7 +21,6 @@ export default StyleSheet.create({
     height: 40,
     fontSize: 18,
     color: 'grey',
-    fontFamily: 'Helvetica',
     fontWeight: 'bold'
   },
   thankMessage: {
@@ -32,7 +30,6 @@ export default StyleSheet.create({
     height: 40,
     fontSize: 18,
     color: 'grey',
-    fontFamily: 'Helvetica',
     fontWeight: 'bold'
   }
 });
