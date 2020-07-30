@@ -1,5 +1,5 @@
 # T-404-LOKA
-Lokaverkefni
+Final Project
 
 # Evaluation and pricing of reusable fashion products
 This is the frontend of the project. Built using React Native.
